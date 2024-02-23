@@ -18,5 +18,6 @@ class HomeController extends Controller
 
     public function showProfileView()
     {
+        return view('profile');
     }
 }

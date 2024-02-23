@@ -50,6 +50,7 @@ Route::prefix('users')->group(function () {
 
         Route::middleware(['must.verify'])->group(function () {
             Route::get('home', [HomeController::class, 'index'])->name('home');
+            Route::get('profile', [HomeController::class, 'showProfileView'])->name('profile');
         });
     });
 });

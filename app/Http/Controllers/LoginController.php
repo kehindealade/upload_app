@@ -33,7 +33,7 @@ class LoginController extends Controller
             return redirect()->intended(route('home'));
         }
 
-        return redirect(route('login.view'))->withErrors('Login is invalid');
+        return redirect(route('login.view'))->withError('Login is invalid');
     }
 
     /**
